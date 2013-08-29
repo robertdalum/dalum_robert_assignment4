@@ -67,7 +67,7 @@ var twoDates = function (D1, D2) {
 //Test 6
 //String
 console.log("Test")
-var checkFirst = StringTest();
+var checkFirst = stringTest();
 console.log(checkFirst.phoneNum("210-555-5122"));
 console.log(checkFirst.emailAddress("robertdalum@fullsail.edu"));
 console.log(checkFirst.urlCheck("www.youtube.com"));
