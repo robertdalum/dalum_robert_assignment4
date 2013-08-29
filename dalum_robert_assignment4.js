@@ -28,7 +28,7 @@ var stringUpper = function (strng) {
 	var split = strng.split(" ");
 	var result = "";
 	for (var i = 0, j = split.length; i < j; i++) {
-		var newSplit = split[i].replace(split[i].charAt(0),(split[i].charAt(0)).toUpperCase()));
+		var newSplit = split[i].replace(split[i].charAt(0),(split[i].charAt(0)).toUpperCase());
 		result = result.concat(newSplit + " ");
 		};
 	return result;
