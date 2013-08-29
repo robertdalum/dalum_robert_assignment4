@@ -43,3 +43,24 @@ var stringUpper = function (strng) {
 
 //5. Format a number to use a specific number of decimal places as for money: 2.1 --> 2.10.
 
+var NumberTest = function () {
+	var decimalSpot = function (number, spotDecimal) {
+		return Number (number.toFixed(spotDecimal));
+	};
+	
+//6. Find the number of hours or days difference between two dates.
+var twoDates = function (D1, D2) {
+	var results = [];
+	var conclude = (D1 > D2) ? D1.getTime() - D2.getTime() : D2.getTime() - D1.getTime();
+	results[3] = conclude / 1000;
+	results[2] = results[3] / 60;
+	results[1] = results[2] / 60;
+	results[0] = results[1] / 24;
+	return results;
+	};
+	return{
+		"decimalSpot" : decimalSpot,
+		"twoDates" : twoDates
+	};
+};
+
