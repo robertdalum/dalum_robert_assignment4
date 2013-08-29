@@ -22,4 +22,24 @@ var urlCheck = function (strng) {
 	var check = /^(?:http|https):/;
 	return check.test(strng);
 	};
-}
+	
+//4. Title-case a string (split into words, then uppercase the first letter of each word).
+var stringUpper = function (strng) {
+	var split = strng.split(" ");
+	var result = "";
+	for (var i = 0, j = split.length; i < j; i++) {
+		var newSplit = split[i].replace(split[i].charAt(0),(split[i].charAt(0)).toUpperCase()));
+		result = result.concat(newSplit + " ");
+		};
+	return result;
+	};
+	return{
+		"phoneNum": phoneNum,
+		"emailAddress": emailAddress,
+		"urlCheck" : urlCheck,
+		"stringUpper" : stringUpper
+	};
+};
+
+//5. Format a number to use a specific number of decimal places as for money: 2.1 --> 2.10.
+
