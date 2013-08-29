@@ -81,5 +81,5 @@ console.log(lastFew.decimalSpot(1.020, 1));
 var D1 = new Date(2013, 5, 17);
 var D2 = new Date(2013, 10, 20);
 var newTimeDate = lastFew.twoDates(D1, D2);
-console.log ("The difference in days between my wife's birthday and mins is " + newTimeDate[0] + ", and in hours is comes out to " + newTimeDate[1]);
+console.log ("The difference in days between my wife's birthday and mine is " + newTimeDate[0] + ", and in hours is comes out to " + newTimeDate[1]);
 console.log(" ");
